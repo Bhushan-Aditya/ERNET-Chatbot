@@ -4,6 +4,7 @@ import os
 import google.generativeai as genai
 from fastapi import HTTPException
 import logging
+from .scraper import ERNETScraper
 
 # Configure logging
 logging.basicConfig(level=logging.INFO)
@@ -15,14 +16,15 @@ class ChatService:
             # Configure the Gemini API
             genai.configure(api_key=os.getenv('GOOGLE_API_KEY'))
             
-            # List available models
-            available_models = [model.name for model in genai.list_models()]
-            logger.info(f"Available models: {available_models}")
-            
-            # Initialize the model - using gemini-1.5-pro
+            # Initialize the model
             self.model = genai.GenerativeModel('gemini-1.5-pro')
             
-            self.system_prompt = """You are a helpful assistant for the ERNET Domain Registry (https://www.registry.ernet.in/).
+            # Scrape website data
+            self.scraper = ERNETScraper()
+            self.website_data = self.scraper.scrape_website()
+            self.formatted_data = self.scraper.get_formatted_data()
+            
+            self.system_prompt = f"""You are a helpful assistant for the ERNET Domain Registry (https://www.registry.ernet.in/).
             Your main responsibilities are:
             1. Help users register new domains
             2. Answer questions about domain registration process
@@ -33,11 +35,11 @@ class ChatService:
             Always be professional, clear, and concise in your responses.
             If you're unsure about something, acknowledge it and suggest contacting ERNET support.
             
-            For initial greetings or test messages, provide a single, welcoming response that:
-            1. Greets the user
-            2. Briefly mentions ERNET domain registration
-            3. Asks how you can help them
-            Keep the response concise and friendly."""
+            Here is the current information from the ERNET website:
+            {self.formatted_data}
+            
+            Important: Always base your responses on the provided website data. If the information is not available in the data, 
+            acknowledge that and suggest contacting ERNET support for the most up-to-date information."""
             
             # Test the model with a simple message
             test_response = self.model.generate_content("Hello")
