@@ -6,6 +6,7 @@ import os
 
 # Load environment variables
 load_dotenv()
+print("GOOGLE_API_KEY loaded:", os.getenv('GOOGLE_API_KEY'))
 
 app = FastAPI(
     title="ERNET Domain Registry Chatbot",
