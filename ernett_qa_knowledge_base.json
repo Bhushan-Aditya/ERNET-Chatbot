@@ -1,0 +1,174 @@
+[
+  {
+    "question": "What types of domains can I register with ERNET?",
+    "answer": "ERNET is the exclusive registrar for ac.in, edu.in, res.in, and their Hindi equivalents: विद्या.भारत, शिक्षा.भारत, शोध.भारत."
+  },
+  {
+    "question": "Who is eligible to register an ac.in, edu.in, or res.in domain?",
+    "answer": "Only educational and research institutions recognized by the Government of India, state governments, or relevant educational boards are eligible to register ac.in, edu.in, or res.in domains."
+  },
+  {
+    "question": "What are the required documents for domain registration?",
+    "answer": "Required documents include: Application letter on institution letterhead, Undertaking on Rs.100 stamp paper, Affiliation/Approval letters, Registration documents, and GSTN certificate (if applicable)."
+  },
+  {
+    "question": "How do I register a new domain with ERNET?",
+    "answer": "Visit https://www.registry.ernet.in, check domain availability, fill the online application, upload required documents, and make payment online."
+  },
+  {
+    "question": "How long does the domain registration process take?",
+    "answer": "Domain registration typically takes 24-48 hours after payment confirmation and document verification."
+  },
+  {
+    "question": "What is the cost of registering a domain for 1 year?",
+    "answer": "The cost for a 1-year registration of an .edu.in or .ac.in domain is Rs. 944 (including GST). Prices may vary for other domains."
+  },
+  {
+    "question": "Can I register a domain for more than 1 year? What are the prices for multiple years?",
+    "answer": "Yes, you can register a domain for up to 10 years. The cost is Rs. 944 per year (including GST) for .edu.in and .ac.in domains. Multiply by the number of years for the total cost."
+  },
+  {
+    "question": "How do I renew my domain?",
+    "answer": "Log in to your account at https://www.registry.ernet.in, select your domain, and follow the renewal process. Upload fresh documents and make payment online."
+  },
+  {
+    "question": "What happens if I forget to renew my domain?",
+    "answer": "If not renewed before expiry, the domain is deactivated for 40 days. After that, it may be deleted and made available for new registration. Reactivation and restoration fees may apply."
+  },
+  {
+    "question": "Can I transfer my domain to another registrar?",
+    "answer": "No, domains under ac.in, edu.in, res.in, and their Hindi equivalents are non-transferable. ERNET is the exclusive registrar for these domains."
+  },
+  {
+    "question": "What is the process for updating contact information for my domain?",
+    "answer": "Log in to your ERNET account, select your domain, and update the contact details. Ensure all information is accurate and up to date."
+  },
+  {
+    "question": "What is Website as a Service (WaaS)?",
+    "answer": "WaaS is a service that allows institutions to create and host customized websites using user-friendly templates, managed and secured by ERNET."
+  },
+  {
+    "question": "What is Learning Management as a Service (LMaaS)?",
+    "answer": "LMaaS is a service that enables institutions to create and manage e-learning platforms for delivering courses and learning materials online."
+  },
+  {
+    "question": "How can WaaS help my institution?",
+    "answer": "WaaS provides a secure, customizable, and easy-to-manage website platform, helping your institution establish a professional online presence."
+  },
+  {
+    "question": "How do I get started with WaaS or LMaaS?",
+    "answer": "After registering your domain with ERNET, you can opt for WaaS or LMaaS through the ERNET portal and follow the setup instructions provided."
+  },
+  {
+    "question": "What payment methods are accepted for domain registration?",
+    "answer": "Only online payments through the ERNET portal are accepted (Internet banking, Credit/Debit Card, IMPS, UPI, etc.). Offline payments are not accepted."
+  },
+  {
+    "question": "Is GST applicable on domain registration fees?",
+    "answer": "Yes, GST is applicable on all domain registration and renewal fees as per government regulations."
+  },
+  {
+    "question": "Can private institutions register edu.in or ac.in domains?",
+    "answer": "Yes, if they are recognized or affiliated with a government body or educational board and meet the eligibility criteria."
+  },
+  {
+    "question": "What are the domain naming rules and restrictions?",
+    "answer": "Domain names must be 3-63 characters, use only letters, digits, and hyphens, and must match the institution's name. Reserved names and government/reputed institution names are not allowed."
+  },
+  {
+    "question": "Can I register a domain name that is similar to a government or reputed institution?",
+    "answer": "No, domain names similar to government organizations or reputed institutions (like IIT, AIIMS, UGC) are not allowed for other entities."
+  },
+  {
+    "question": "How do I check if a domain name is available?",
+    "answer": "Visit https://www.registry.ernet.in and use the domain availability checker tool."
+  },
+  {
+    "question": "What should I do if my domain registration is rejected?",
+    "answer": "Review the rejection reason, correct any issues, and reapply with the required documents. Contact ERNET support if you need assistance."
+  },
+  {
+    "question": "How do I contact ERNET support?",
+    "answer": "You can email helpdesk@domain.ernet.in or visit https://www.registry.ernet.in/contact-us for support."
+  },
+  {
+    "question": "What is the support email and phone number?",
+    "answer": "Email: helpdesk@domain.ernet.in. Phone support is available after opening a support ticket."
+  },
+  {
+    "question": "What are ERNET's working hours for support?",
+    "answer": "Support is available Monday to Friday, 9:00 AM to 5:30 PM IST."
+  },
+  {
+    "question": "What is the objective of ERNET India?",
+    "answer": "ERNET India's objective is to provide IT and ICT services, including domain registration, to academic and research institutions in India."
+  },
+  {
+    "question": "Is ERNET reliable for domain registration and management?",
+    "answer": "Yes, ERNET is a government-backed, exclusive registrar for academic and research domains in India, serving thousands of institutions."
+  },
+  {
+    "question": "Can I get a refund if my domain registration is cancelled?",
+    "answer": "Refunds are possible if the application is cancelled before domain registration or if documents are not submitted in time. See ERNET's refund policy for details."
+  },
+  {
+    "question": "What security measures does ERNET provide for registered domains?",
+    "answer": "ERNET ensures secure hosting, SSL certificates for WaaS, and compliance with CERT-In security guidelines for all registered domains."
+  },
+  {
+    "question": "Where can I find the terms and conditions for domain registration?",
+    "answer": "You can find the terms and conditions at https://www.registry.ernet.in/terms-conditions."
+  },
+  {
+    "question": "What is the maximum length of a domain name under ac.in, edu.in, or res.in?",
+    "answer": "Domain names may be between 3 and 63 characters in length."
+  },
+  {
+    "question": "Can I use special characters like underscores or exclamation marks in my domain name?",
+    "answer": "No, only letters (A-Z and a-z), digits (0-9), and hyphens are accepted. Special characters like underscores and exclamation marks are not permitted."
+  },
+  {
+    "question": "Is the domain name case-sensitive?",
+    "answer": "No, domain names are not case-sensitive."
+  },
+  {
+    "question": "Can I register a generic domain name under ac.in, edu.in, or res.in?",
+    "answer": "No, generic domain names, reserved names, and individual person's name-based domain names are not allowed for registration under ac.in, edu.in, res.in, and their Hindi equivalents."
+  },
+  {
+    "question": "What should I do if my domain registration is rejected due to invalid documents?",
+    "answer": "If your domain registration is rejected due to invalid documents, you must upload valid documents within 10 days of rejection. Otherwise, the application will be automatically deleted, and payment will be refunded."
+  },
+  {
+    "question": "What is the refund policy for domain registration?",
+    "answer": "Refund requests will be entertained only if submitted within 60 days of payment and before domain registration. Once the domain is registered, refunds will not be processed."
+  },
+  {
+    "question": "What are the terms and conditions for using WaaS and LMaaS?",
+    "answer": "The terms and conditions include: ownership of content remains with the institution, no illegal or offensive content, no content that infringes third-party rights, and ERNET India is not responsible for hacking or fraudulent activities."
+  },
+  {
+    "question": "What is the maximum space provided for WaaS and LMaaS?",
+    "answer": "ERNET India provides 2GB space per website for WaaS and LMaaS. Additional space up to 5GB is available at a per GB per month charge."
+  },
+  {
+    "question": "What is the process for renewing a domain name?",
+    "answer": "Log in to your account at https://www.registry.ernet.in, select your domain, and follow the renewal process. Upload fresh documents and make payment online."
+  },
+  {
+    "question": "What happens if I do not renew my domain before expiry?",
+    "answer": "If not renewed before expiry, the domain is deactivated for 40 days. After that, it may be deleted and made available for new registration. Reactivation and restoration fees may apply."
+  },
+  {
+    "question": "What is the process for checking domain name availability?",
+    "answer": "Visit https://www.registry.ernet.in and use the domain availability checker tool."
+  },
+  {
+    "question": "What are the working hours for ERNET support?",
+    "answer": "Support is available Monday to Friday, 9:00 AM to 5:30 PM IST."
+  },
+  {
+    "question": "What is the process for contacting ERNET support?",
+    "answer": "You can email helpdesk@domain.ernet.in or visit https://www.registry.ernet.in/contact-us for support."
+  }
+] 
