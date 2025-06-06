@@ -13,6 +13,12 @@ import {
 } from '@mui/material';
 import SendIcon from '@mui/icons-material/Send';
 import axios from 'axios';
+import './index.css';
+// Import new components (to be created)
+import Header from './components/Header';
+import SearchBar from './components/SearchBar';
+import SupportInfo from './components/SupportInfo';
+import ChatbotWidget from './components/ChatbotWidget';
 
 function App() {
   const [message, setMessage] = useState('');
@@ -57,68 +63,22 @@ function App() {
   };
 
   return (
-    <Container maxWidth="md" sx={{ height: '100vh', py: 4 }}>
-      <Paper elevation={3} sx={{ height: '100%', display: 'flex', flexDirection: 'column' }}>
-        <Box sx={{ p: 2, bgcolor: 'primary.main', color: 'white' }}>
-          <Typography variant="h5" component="h1">
-            ERNET Domain Registry Chatbot
-          </Typography>
-        </Box>
-
-        <Box sx={{ flex: 1, overflow: 'auto', p: 2 }}>
-          <List>
-            {conversation.map((msg, index) => (
-              <ListItem
-                key={index}
-                sx={{
-                  justifyContent: msg.role === 'user' ? 'flex-end' : 'flex-start',
-                }}
-              >
-                <Paper
-                  elevation={1}
-                  sx={{
-                    p: 2,
-                    maxWidth: '70%',
-                    bgcolor: msg.role === 'user' ? 'primary.light' : 'grey.100',
-                    color: msg.role === 'user' ? 'white' : 'text.primary',
-                  }}
-                >
-                  <ListItemText primary={msg.content} />
-                </Paper>
-              </ListItem>
-            ))}
-            {loading && (
-              <ListItem sx={{ justifyContent: 'flex-start' }}>
-                <CircularProgress size={20} />
-              </ListItem>
-            )}
-          </List>
-        </Box>
-
-        <Box sx={{ p: 2, borderTop: 1, borderColor: 'divider' }}>
-          <Box sx={{ display: 'flex', gap: 1 }}>
-            <TextField
-              fullWidth
-              variant="outlined"
-              placeholder="Type your message..."
-              value={message}
-              onChange={(e) => setMessage(e.target.value)}
-              onKeyPress={handleKeyPress}
-              disabled={loading}
-            />
-            <Button
-              variant="contained"
-              color="primary"
-              endIcon={<SendIcon />}
-              onClick={handleSend}
-              disabled={loading || !message.trim()}
-            >
-              Send
-            </Button>
-          </Box>
-        </Box>
-      </Paper>
-    </Container>
+    <div className="ernet-app">
+      <Header />
+      <main className="ernet-main">
+        <div className="ernet-floating-domains">
+          <span className="ernet-floating-domain ernet-floating-domain-1">विद्या.भारत</span>
+          <span className="ernet-floating-domain ernet-floating-domain-2">ac.in</span>
+          <span className="ernet-floating-domain ernet-floating-domain-3">edu.in</span>
+          <span className="ernet-floating-domain ernet-floating-domain-4">res.in</span>
+          <span className="ernet-floating-domain ernet-floating-domain-5">शोध.भारत</span>
+          <span style={{position:'relative',zIndex:2,fontWeight:700,fontSize:'2.2rem'}}>res.in <span style={{fontWeight:400}}>|</span> edu.in <span style={{fontWeight:400}}>|</span> ac.in</span>
+        </div>
+        <SearchBar />
+        <SupportInfo />
+      </main>
+      <ChatbotWidget />
+    </div>
   );
 }
 

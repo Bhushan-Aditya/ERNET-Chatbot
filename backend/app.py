@@ -171,29 +171,20 @@ Please provide accurate and helpful responses based on this information. If the 
         return None
 
 def generate_response(message: str, conversation_history: List[Message]) -> str:
-    """Generate response using both offline knowledge base and Gemini AI"""
     if not message:
         return "Hello! I'm the ERNET domain registration assistant. How can I help you today?"
-    
     # First try to get response from offline knowledge base
     offline_response = get_offline_response(message)
     if offline_response:
         return offline_response
-    
     # If no offline response, try Gemini AI
     gemini_response = get_gemini_response(message, conversation_history)
     if gemini_response:
         return gemini_response
-    
     # Default response if both methods fail
-    return "I can help you with information about:\n" + \
-           "- Domain types and eligibility\n" + \
-           "- Registration requirements and documents\n" + \
-           "- Domain naming rules\n" + \
-           "- Registration policies and fees\n" + \
-           "- Value added services (WaaS and LMaaS)\n" + \
-           "- Support and contact information\n\n" + \
-           "Please ask a specific question about any of these topics."
+    if len(conversation_history) <= 1:
+        return "Hello! I'm the ERNET domain registration assistant. How can I help you today?"
+    return "Sorry, I didn't understand that. Please ask about domain registration, renewal, transfer, or support."
 
 @app.post("/api/v1/chat")
 async def chat(request: ChatRequest):
@@ -208,7 +199,12 @@ async def chat(request: ChatRequest):
         conversation_history = request.conversation_history + [
             Message(role="assistant", content=response)
         ]
-        return {"conversation_history": conversation_history}
+        # Remove consecutive duplicate messages
+        filtered_history = []
+        for msg in conversation_history:
+            if not filtered_history or (msg.role != filtered_history[-1].role or msg.content != filtered_history[-1].content):
+                filtered_history.append(msg)
+        return {"conversation_history": filtered_history}
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
 
